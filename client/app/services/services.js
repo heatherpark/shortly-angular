@@ -4,7 +4,8 @@ angular.module('shortly.services', [])
 
   return {
     getAll : function () {
-      return $http({method: 'GET',
+      return $http({
+        method: 'GET',
         url: '/api/links'
       })
       .then(function (resp) {
@@ -12,9 +13,8 @@ angular.module('shortly.services', [])
       });
     },
     addOne: function (data) {
-      // data = JSON.stringify(data);
-
-      return $http({method: 'POST',
+      return $http({
+        method: 'POST',
         url: '/api/links',
         data: data
       })

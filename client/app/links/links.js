@@ -1,4 +1,4 @@
-angular.module('shortly.links', [])
+ angular.module('shortly.links', [])
 
 .controller('LinksController', function ($scope, Links) {
 
@@ -10,7 +10,6 @@ angular.module('shortly.links', [])
       $scope.data.links = data;
     });
   };
-
   $scope.getAll();
 });
 
