@@ -10,7 +10,8 @@ angular.module('shortly.links', [])
       $scope.data.links = data;
     });
   };
-  return $scope.getAll();
+
+  $scope.getAll();
 });
 
 

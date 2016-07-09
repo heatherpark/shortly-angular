@@ -11,11 +11,15 @@ angular.module('shortly.services', [])
         return resp.data;
       });
     },
-
     addOne: function (data) {
+      // data = JSON.stringify(data);
+
       return $http({method: 'POST',
         url: '/api/links',
         data: data
+      })
+      .then(function (resp) {
+        return resp.data;
       });
     }
   };
